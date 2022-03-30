@@ -173,15 +173,32 @@ public class Sketch extends PApplet {
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
   public void draw_section5(){
-    
+    fill(255, 255, 255);
+    for (int i = 0; i< 300; i+=10) {
+      //note that this loop is set to be less than i, not less than or equal to i like the other loops. This is to reflect the given picture.
+      for(int j = 0; j <i; j+=10) {
+        rect(i +3, 293-j, 5,5);
+      }
+  }
 
   }
 
   public void draw_section6(){
-
+    fill(255, 255, 255);
+    for (int i = 0; i< 300; i+=10) {
+        for(int j = 290; j >=i; j-=10) {
+          rect(i +303, j+3, 5,5);
+        }
+    }
   }
 
   public void draw_section7(){
+    fill(255, 255, 255);
+    for (int i = 0; i < 300; i+=10) {
+      for(int j = 290; j>= i; j-=10) {
+        rect(i + 603, 293-j, 5, 5);
+      }
+    }
 
   }
   
